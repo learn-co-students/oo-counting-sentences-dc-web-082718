@@ -19,9 +19,6 @@ class String
     array = self.split(Regexp.union(delimiters))
     array.delete("")
 
-
-
-
     return array.length
 
   end
