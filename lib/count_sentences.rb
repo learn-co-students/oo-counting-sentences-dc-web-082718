@@ -15,12 +15,13 @@ class String
   end
 
   def count_sentences
-    
-    self.split("").each.with_index do |char, index|
-      if 
-    end
-    array = self.split("."||"?"||"!")
-  
+    delimiters = ['.', '!', "?"]
+    array = self.split(Regexp.union(delimiters))
+    array.delete("")
+
+
+
+
     return array.length
 
   end
